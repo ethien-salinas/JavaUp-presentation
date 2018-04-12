@@ -12,15 +12,18 @@ html
       section
         h1 De <i class="fab fa-java"></i> a <i class="fab fa-js"></i>
         h2 y de regreso
-        hr
-        h3 Por <a href="https://github.com/ethien-salinas">Ethien Salinas</a>
+        br
+        br
+        br
+        h3
+          strong Ethien Salinas
 
       section
         h2 <i class="fas fa-hand-point-up"></i> Antes de empezar
         img(src="images/aprendizaje.jpg")
         hr
+        p.bullet <i class="fas fa-question-circle"></i> Cómo funciona el aprendizaje
         ul.build.build-items
-          li <i class="fas fa-question-circle"></i> Cómo funciona el aprendizaje
           li <i class="far fa-frown"></i> no funciona igual para todos
 
       section
@@ -28,80 +31,96 @@ html
         pre
           code.language-javascript.
             Maven | Gradle
-        pre
-          code.language-javascript.
-            npm | yarn | webpack
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                npm | yarn | gulp | webpack
 
       section
         h2.bullet <i class="fas fa-hdd"></i> Sistema de caché de yarn
         pre
           code.language-javascript.
             `...Yarn caches every package it downloads
-            so it never needs to download it again.
-            It also parallelizes operations to maximize resource
-            utilization so install times are faster than ever.`
-        pre
-          code.language-javascript.
-            maven → .m2 folder
+            so it never needs to download it again.`
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                maven → .m2 folder
 
       section
-        h2.bullet <i class="fas fa-vial"></i> TDD / BDD
+        h2.bullet <i class="fab fa-java"></i> CompletableFuture
         pre
           code.language-javascript.
-            JUnit
-        pre
-          code.language-javascript.
-            mocha | jest --watch
+            `...A Future that may be explicitly completed (setting
+            its value and status), and may be used as a CompletionStage,
+            supporting dependent functions and actions that trigger
+            upon its completion.`
+        h2.bullet <i class="fab fa-js"></i>
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                `...A Promise is a proxy for a value not necessarily known
+                when the promise is created. It allows you to 
+                associate handlers with an asynchronous action's
+                eventual success value or failure reason.`
 
       section
         h2.bullet <i class="fas fa-cog fa-spin"></i> Implementaciones de la JVM
         pre
           code.language-javascript.
             HotSpot | IKVM.NET | OpenJ9 | Jikes RVM
-        pre
-          code.language-javascript.
-            V8 | Nashorn | Chakra
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                V8 | Nashorn | Chakra
 
       section
-        h2.bullet <i class="fas fa-terminal"></i> Transpilacion y pollify
+        h2.bullet <i class="fas fa-terminal"></i> Transpiler & Polyfill
         pre
           code.language-javascript.
             Babel
 
       section
         h2.bullet <i class="fas fa-folder-open"></i> Estructura del proyecto
-        pre
-          code.language-javascript.
-            src
-              main
-                java
-              test
-                java
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                src
+                  main
+                    java
+                  test
+                    java
 
       section
         h2.bullet <i class="fas fa-cog fa-spin"></i> REPL
         pre
           code.language-javascript.
             JShell
-        pre
-          code.language-javascript.
-            Consola del navegador
+            List immutableList = List.of("one","two","three");
+        ul.build.build-items
+          li
+            pre
+              code.language-javascript.
+                Consola del navegador
 
       section
         h2.bullet <i class="fab fa-superpowers"></i> ES6 fue como Java8
         pre
           code.language-javascript.
             "Java 8, make Java great again"
-                            Victor Orozco
+                              Victor Orozco
 
       section(data-bespoke-backdrop='emphatic')
         h1.bullet <i class="far fa-question-circle"></i> Preguntas
 
       section
-        h2.bullet <i class="fas fa-map-marker"></i> Referencias
-        ul
-          li List of Java virtual machines, https://en.wikipedia.org/wiki/List_of_Java_virtual_machines
-          li List of ECMAScript engines, https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
+        h1.bullet <i class="far fa-thumbs-up"></i> Gracias
+        h3 <i class="fab fa-github"></i> ethien-salinas
+        h3 <i class="fab fa-facebook-square"></i> ethien.salinas
 
     script(src='build/build.js')
-    script(src='https://use.fontawesome.com/releases/v5.0.10/js/all.js')
