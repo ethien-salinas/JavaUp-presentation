@@ -1,74 +1,107 @@
 doctype html
 html
   head
-    title bespoke-theme-cube
-    meta(name='description', content='A theme for Bespoke.js')
-    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title De Java a JS y de regreso
     meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 
   body
 
-    article
+    article.deck
 
       section
-        h1 De Java a JS
+        h1 De <i class="fab fa-java"></i> a <i class="fab fa-js"></i>
         h2 y de regreso
         hr
         h3 Por <a href="https://github.com/ethien-salinas">Ethien Salinas</a>
 
       section
-        h2.bullet Antes de empezar
-        p.bullet Como funciona el aprendizaje?
-        p.bullet Que yo lo haya aprendido asi, no quiere decir que funcione igual para ti
+        h2 <i class="fas fa-hand-point-up"></i> Antes de empezar
+        img(src="images/aprendizaje.jpg")
+        hr
+        ul.build.build-items
+          li <i class="fas fa-question-circle"></i> Cómo funciona el aprendizaje
+          li <i class="far fa-frown"></i> no funciona igual para todos
 
       section
-        h2.bullet Gestores de paquetes | proyectos
-        p.bullet Maven | Gradle
-        p.bullet npm | yarn | webpack
+        h2.bullet <i class="fas fa-box-open"></i> Gestores de paquetes | proyectos
+        pre
+          code.language-javascript.
+            Maven | Gradle
+        pre
+          code.language-javascript.
+            npm | yarn | webpack
 
       section
-        h2.bullet Sistema de caché de yarn
-        ul
-          li ... Yarn caches every package it downloads so it never needs to download it again. It also parallelizes operations to maximize resource utilization so install times are faster than ever.
-          li maven → .m2 folder
+        h2.bullet <i class="fas fa-hdd"></i> Sistema de caché de yarn
+        pre
+          code.language-javascript.
+            `...Yarn caches every package it downloads
+            so it never needs to download it again.
+            It also parallelizes operations to maximize resource
+            utilization so install times are faster than ever.`
+        pre
+          code.language-javascript.
+            maven → .m2 folder
 
       section
-        h2.bullet TDD / BDD
-        p.bullet JUnit -->
-        p.bullet mocha | jest --watch
+        h2.bullet <i class="fas fa-vial"></i> TDD / BDD
+        pre
+          code.language-javascript.
+            JUnit
+        pre
+          code.language-javascript.
+            mocha | jest --watch
 
       section
-        h2.bullet Implementaciones de la JVM
-        p.bullet HotSpot | IKVM.NET | OpenJ9 | Jikes RVM
-        p.bullet V8 | Nashorn | Chakra
+        h2.bullet <i class="fas fa-cog fa-spin"></i> Implementaciones de la JVM
+        pre
+          code.language-javascript.
+            HotSpot | IKVM.NET | OpenJ9 | Jikes RVM
+        pre
+          code.language-javascript.
+            V8 | Nashorn | Chakra
 
       section
-        h2.bullet Transpilacion y pollify
-        p.bullet Babel
+        h2.bullet <i class="fas fa-terminal"></i> Transpilacion y pollify
+        pre
+          code.language-javascript.
+            Babel
 
       section
-        h2.bullet Estructura del proyecto
-        p.bullet En Java hay una buena convencion para la estructura de un proyecto
+        h2.bullet <i class="fas fa-folder-open"></i> Estructura del proyecto
+        pre
+          code.language-javascript.
+            src
+              main
+                java
+              test
+                java
 
       section
-        h2.bullet REPL
-        p.bullet JShell
-        p.bullet Consola del navegador
+        h2.bullet <i class="fas fa-cog fa-spin"></i> REPL
+        pre
+          code.language-javascript.
+            JShell
+        pre
+          code.language-javascript.
+            Consola del navegador
 
       section
-        h2.bullet ES6 fue como Java8
-        p.bullet Java 8, make Java great again
-        
-      section
-        h2.bullet Monads
-        p.bullet <Optional> despues de usar FP en JS
+        h2.bullet <i class="fab fa-superpowers"></i> ES6 fue como Java8
+        pre
+          code.language-javascript.
+            "Java 8, make Java great again"
+                            Victor Orozco
 
       section(data-bespoke-backdrop='emphatic')
-        h1.bullet Preguntas?
+        h1.bullet <i class="far fa-question-circle"></i> Preguntas
 
       section
-        h2.bullet Referencias
-        p.bullet List of Java virtual machines, https://en.wikipedia.org/wiki/List_of_Java_virtual_machines
-        p.bullet List of ECMAScript engines, https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
+        h2.bullet <i class="fas fa-map-marker"></i> Referencias
+        ul
+          li List of Java virtual machines, https://en.wikipedia.org/wiki/List_of_Java_virtual_machines
+          li List of ECMAScript engines, https://en.wikipedia.org/wiki/List_of_ECMAScript_engines
 
     script(src='build/build.js')
+    script(src='https://use.fontawesome.com/releases/v5.0.10/js/all.js')
