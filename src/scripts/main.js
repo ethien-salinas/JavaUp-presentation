@@ -1,14 +1,13 @@
 // Require Node modules in the browser thanks to Browserify: http://browserify.org
-var bespoke = require('bespoke');
-//var cube = require('./bespoke-theme-cube.min.js')
-var cube = require('bespoke-theme-cube');
-var classes = require('bespoke-classes');
-var nav = require('bespoke-nav');
-var scale = require('bespoke-scale');
-var bullets = require('bespoke-bullets');
-var hash = require('bespoke-hash');
-var prism = require('bespoke-prism');
-var extern = require('bespoke-extern');
+const bespoke = require('bespoke');
+const cube = require('bespoke-theme-cube');
+const classes = require('bespoke-classes');
+const nav = require('bespoke-nav');
+const scale = require('bespoke-scale');
+const bullets = require('bespoke-bullets');
+const hash = require('bespoke-hash');
+const prism = require('bespoke-prism');
+const extern = require('bespoke-extern');
 
 // Bespoke.js
 //bespoke.from({ parent: 'article.deck', slides: 'section' }, [
